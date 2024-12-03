@@ -42,7 +42,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(multer().none());
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://entnt-frontend-dun.vercel.app"],
+    origin: ["http://localhost:5173","https://entnt-frontend-dun.vercel.app","*"],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   }),
 );
